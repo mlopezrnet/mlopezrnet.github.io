@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Varela+Round&display=swap');
+
+:root {
+    --body-ff: 'Varela Round', sans-serif;
+    --body-fs: 16px;
+    --heading-ff: 'Golos Text', sans-serif;
+    --heading-fs: 40px;
+    --regular: 400;
+
+    /* Paleta de colores */
+    --elite-blue: hsl(218,51%,22%);
+    --green-balloon: hsl(156,37%,64%);
+    --spaceman: hsl(225,16%,44%);
+    --spaceman-gray: hsl(220,14%,43%);
+    --spaceman-light: hsl(227,19%,58%);
+
+    --size-header: 90px;
+    --size-nav-item: 55px;
+}
+
+
