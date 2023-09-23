@@ -13,10 +13,184 @@
     --green-balloon: hsl(156,37%,64%);
     --spaceman: hsl(225,16%,44%);
     --spaceman-gray: hsl(220,14%,43%);
-    --spaceman-light: hsl(227,19%,58%);
+    --spaceman-light: hsl(227,19%,72%);
 
-    --size-header: 90px;
-    --size-nav-item: 55px;
 }
 
+/* Valores predeterminados */
+body {
+    font-family: var(--body-ff);
+    font-size: var(--body-fs);
+    color: var(--elite-blue);
+}
 
+section {
+    padding-block: 8px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-ff);
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--green-balloon);
+}
+
+h2, h3 {
+    color: var(--elite-blue);
+}
+
+h4 {
+    color: var(--spaceman-gray);
+}
+
+/* Links de navegación */
+header {
+    text-align: center;
+    background-color: var(--elite-blue);
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer img {
+    height: 68px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--green-balloon);
+}
+
+/* Sección principal */
+main {
+    margin: 0 20px;
+}
+
+/* Texto de bienvenida y foto */
+.home-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    display: block;
+    margin-left: 30px;
+
+}
+
+.intro {
+    flex: 1;
+    margin-left: 30px;
+}
+
+/* Habilidades */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.soft-skills, .web-dev, .misc {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.soft-skills {
+    background-color: #DBDB60;
+}
+
+.web-dev {
+    background-color: #85DB60;
+}
+
+.misc {
+    background-color: #82F5F5;
+}
+
+.skills-container ul {
+    columns: 2;
+    list-style: none;
+}
+
+label {
+    color: var(--spaceman-light);
+    font-style: italic;
+}
+
+/* línea de historia */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(var(--green-balloon), white);
+    margin-right: 20px;
+}
+
+em {
+    color: var(--green-balloon);
+    font-style: normal;
+}
+
+.redes-sociales-container {
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: var(--spaceman-gray);
+}
+
+.fa-brands:hover {
+    color: var(--green-balloon);
+}
+
+/* Responsivo */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .home-container {
+        font-size: 16px;
+    }
+    .profile-pic {
+        margin: 0;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+
+}
