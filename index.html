@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Sitio web de Mario López Ramonet</title>
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre mí</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
     </header>
     <main>
         <section id="home">
@@ -129,8 +139,67 @@
                 </div>
             </div>
         </section>
+        <section id="job-history">
+            <h1>Experiencia laboral</h1>
+            <div class="timeline">
+                <label>2023</label>
+                <h2>Becario en Dirección de Apoyo a Estudiantes</h2>
+                <h3>Universidad de Sonora</h3><h4>Hermosillo, Sonora</h4>
+                <h4>Sep 2023 - Actual</h4>
+                <p>Líder técnico de equipo especializado en la digitalización, capturación, archivado y concentrado de información de registros
+                    históricos de resultados CENEVAL, trabajando en un nuevo módulo con credenciales para el acceso centralizado
+                    de estos registros.
+                </p>
+                <label>2022</label>
+                <h2>Full-stack Developer</h2>
+                <h3>AD Sistemas Soluciones en TI</h3><h4>Hermosillo, Sonora</h4>
+                <h4>Nov 2022 - May 2023 · 7 meses</h4>
+                <p>Trabajé en módulos de reporte de ventas y almacén así como mapas para su sistema ERP modular para PyMES.
+                    Tareas de implementación, soporte, optimización de rendimiento (queries y tiempos de carga),
+                    mantenimiento e implementación de APIs REST/CRUD.</p>
+                <label>2019</label>
+                <h2>Especialista de datos / Diseñador</h2>
+                <h3>Intercom Online Inc.</h3><h4>New York, NY (remoto)</h4>
+                <h4>Mar 2019 - Mar 2020 · 1 año</h4>
+                <p>Análisis, minería y parseo de datos de distintos sitios web para la elaboración de un motor de búsqueda
+                    para doctores de la medicina alternativa, además de diseños de la marca, elaborado de maquetas, etc.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>Proyectos</h1>
+            <h2>Play&Stars</h2>
+            <img src="./img/play-and-stars.png" alt="Captura de pantalla del sitio de Play&Stars">
+            <p>Esta página es un proyecto ficticio desarrollado en HTML, CSS y Javascript como parte de la clase de Desarrollo de Frontend 2023-2 en la Universidad de Sonora.</p>
+            <h3>Características:</h3>
+            <ul>
+                <li>Navegación interactiva por anclaje y efectos de desplazamiento suave.</li>
+                <li>Diseño atractivo y profesional con enfoque en la usabilidad.</li>
+                <li>Diseño responsive para adaptarse a diferentes dispositivos.</li>
+            </ul>
+            <h3>Tecnologías: HTML, CSS, Javascript (ES6).</h3>
+            <h2>Tarjeta de Crédito</h2>
+            <img src="./img/fe-tarjeta.png" alt="Captura de pantalla del sitio de Tarjeta de Crédito">
+            <p>Esta página fue una práctica que desarrollé para aprender a usar Angular y .NET Core.</p>
+            <h3>Características:</h3>
+            <ul>
+                <li>Guardado, Lectura, Edición y Eliminado de datos (CRUD).</li>
+                <li>Forms reactivos.</li>
+                <li>Validación de campos.</li>
+            </ul>
+            <h3>Tecnologías: HTML, CSS, Angular, .NET Core, SQL Server.</h3>
+        </section>
     </main>
     <footer>
+        <section id="contact-me">
+            <h1>Contacto</h1>
+            <p>Si deseas contactarme, puedes hacerlo por medio de:</p>
+            <div class="redes-sociales-container">
+                <a href="https://www.linkedin.com/in/mario-l%C3%B3pez-ramonet-0ba027188/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mlopezrnet" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <img src="./img/c.png">
+        </section>
+        <p>Mario López Ramonet &copy; 2023</p>
     </footer>
 </body>
 </html>
